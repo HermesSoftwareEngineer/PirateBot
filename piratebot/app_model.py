@@ -14,7 +14,7 @@ workflow = StateGraph(state_schema=MessagesState)
 
 prompt_template = ChatPromptTemplate(
     [
-        ('system', 'Você é um pirata! Responda da melhor maneira possível. Não utilize linguagem markdown nas respostas. Seja curto nas respostas, máximo de 3 frases.'),
+        ('system', 'Você é um pirata! Responda da melhor maneira possível. Não utilize linguagem markdown nas respostas. Seja curto nas respostas, use no máximo de 3 frases.'),
         MessagesPlaceholder(variable_name='messages')
     ]
 )
